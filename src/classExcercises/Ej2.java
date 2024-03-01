@@ -1,4 +1,4 @@
-package ejerciciosClase;
+package classExcercises;
 
 import java.util.Scanner;
 
@@ -12,7 +12,7 @@ public class Ej2 {
     quién gana según las reglas del juego.*/
 
         Scanner scanner = new Scanner(System.in);
-        System.out.print("¿Piedra(1), papel(2) o tijera(3)?: ");
+        System.out.print("¿Stone(1), paper(2) o scissors(3)?: ");
 
         int randomNum = (int) (Math.random() * 3) + 1;
         int userElection = scanner.nextInt();
@@ -22,44 +22,45 @@ public class Ej2 {
 
         switch (Election){
             case 1:
-                ElectionTxt = "piedra";
+                ElectionTxt = "stone";
                 break;
             case 2:
-                ElectionTxt = "papel";
+                ElectionTxt = "paper";
                 break;
             case 3:
-                ElectionTxt = "tijera";
+                ElectionTxt = "scissors";
                 break;
         };
 
-        System.out.print("Tu enemigo sacó " + ElectionTxt + "\n");
+        System.out.print("Your enemy took out " + ElectionTxt + "\n");
 
         if(Election == userElection){
-            System.out.print("¡Empate!");
+            System.out.print("Tie!");
+            userElection = 0;
             scanner.close();
         };
 
         if(userElection == 1){
             if(Election == 2){
-                System.out.print("¡Perdiste!");
+                System.out.print("You lost!");
             } else {
-                System.out.print("¡Ganaste!");
+                System.out.print("You won!");
             }
         };
 
         if(userElection == 2){
             if(Election == 1){
-                System.out.print("¡Ganaste!");
+                System.out.print("You won!");
             } else {
-                System.out.print("¡Perdiste!");
+                System.out.print("You lost!");
             }
         };
 
         if(userElection == 3){
             if(Election == 2){
-                System.out.print("¡Ganaste!");
+                System.out.print("You won!");
             } else {
-                System.out.print("¡Perdiste!");
+                System.out.print("You lost!");
             }
         };
     };

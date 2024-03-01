@@ -1,9 +1,9 @@
-package ejerciciosCasa;
+package homeExcercises;
 
 import java.util.Random;
 import java.util.Scanner;
 
-public class Ej4 {
+public class Ej8 {
     public static void main(String[] args) {
         /*Ejercicio de Generación de Números Aleatorios con Suma:
         Escribe un programa en Java que genere dos números enteros aleatorios entre 1 y 10 y
@@ -13,21 +13,21 @@ public class Ej4 {
         Random random = new Random();
 
         int randomNum1 = random.nextInt(10) + 1;
-        System.out.print("El primer numero es " + randomNum1 + "\n");
+        System.out.print("The first number is " + randomNum1 + "\n");
 
         int randomNum2 = random.nextInt(10) + 1;
-        System.out.print("El segundo numero es " + randomNum2 + "\n");
+        System.out.print("The second number is " + randomNum2 + "\n");
 
         int correctSum = (randomNum1 + randomNum2);
 
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Escribe el resultado de la suma: ");
+        System.out.print("Write the result of the sum: ");
         int userSum = scanner.nextInt();
 
         if (userSum == correctSum){
-            System.out.print("¡Tu respuesta es correcta!");
+            System.out.print("Your answer is correct!");
         } else {
-            System.out.print("Tu respuesta es incorrecta, " + randomNum1 + " + " + randomNum2 + " = " + correctSum);
+            System.out.print("Your answer is incorrect, " + randomNum1 + " + " + randomNum2 + " = " + correctSum);
         }
     }
 }

@@ -1,8 +1,8 @@
-package ejerciciosCasa;
+package homeExcercises;
 
 import java.util.Scanner;
 
-public class Ej1 {
+public class Ej5 {
     public static void main(String[] args) {
         /*
         Ejercicio de Suma de Dígitos:
@@ -12,17 +12,16 @@ Ejemplo: Usuario ingresa 12 → El programa retorna 3
 SumDigitos = 1+2= 3
         * */
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Ingresa tu numero entero: ");
+        System.out.print("--> Enter your whole number: ");
 
         int userNum = scanner.nextInt();
-        int userLength1 = 0;
-        int userLength2 = 0;
+        int sumNum = 0;
 
-        for(int i = 10; i <= userNum; i = i * 10) {
-            userLength1 = userNum / i;
-            userLength2 = userNum % i;
+        for (int tempNum = userNum; tempNum > 0; tempNum = tempNum / 10) {
+            int digit = tempNum % 10;
+            sumNum = sumNum + digit;
+
         }
-
-        System.out.print(userLength1 + " + " + userLength2 + " = " + (userLength1 + userLength2));
+        System.out.println("The sum of all digits is: " + sumNum);
     }
 }

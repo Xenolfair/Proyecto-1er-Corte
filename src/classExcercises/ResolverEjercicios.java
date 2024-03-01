@@ -1,4 +1,4 @@
-package ejerciciosClase;
+package classExcercises;
 
 public class ResolverEjercicios {
 

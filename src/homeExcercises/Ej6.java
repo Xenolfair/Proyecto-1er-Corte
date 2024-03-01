@@ -1,8 +1,8 @@
-package ejerciciosCasa;
+package homeExcercises;
 
 import java.util.Scanner;
 
-public class Ej2 {
+public class Ej6 {
     public static void main(String[] args) {
         /*
         Ejercicio de Generación de Patrón de Asteriscos:
@@ -17,7 +17,7 @@ public class Ej2 {
 ****
         */
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Ingresa tu numero entero: ");
+        System.out.print("Enter your whole number: ");
 
         int userNum = scanner.nextInt();
 
