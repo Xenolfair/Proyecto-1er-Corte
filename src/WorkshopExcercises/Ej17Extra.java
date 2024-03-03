@@ -53,7 +53,7 @@ public class Ej17Extra {
                 double average = sum / grades.size();
             }*/
             double average = grades.isEmpty() ? 0 : sum / grades.size();
-            System.out.println("Average of " + student1 + ": " + average);
+            System.out.println("--> Average of " + student1 + ": " + average);
         }
     }
 }
