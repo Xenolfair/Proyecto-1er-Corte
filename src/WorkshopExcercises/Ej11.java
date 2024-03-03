@@ -1,14 +1,16 @@
-package ejerciciosTaller;
+package WorkshopExcercises;
 
 import java.util.Scanner;
 import java.util.Vector;
-
-public class Ej13 {
+public class Ej11 {
     public static void main(String[] args) {
-        /*Escribir un programa que encuentre el elemento máximo en un vector de enteros. es
-        decir el número más grande*/
+        /*Suma de elementos:
+        Escribir un programa que calcule la suma de todos los elementos en un vector de enteros.*/
+
         Scanner scanner = new Scanner(System.in);
         Vector<Integer> userNum = new Vector<>();
+        int numPrev = 0;
+        int sumNum = 0;
 
         System.out.println("Enter numbers to add to the vector (enter 'end' to finish):");
         String input;
@@ -27,13 +29,11 @@ public class Ej13 {
             }
         }
 
-        int numMax = userNum.get(0);
-        for(int i = 1; i < userNum.size(); i++){
-            if (userNum.get(i) > numMax){
-                numMax = userNum.get(i);
-            }
+        for(int i = 0; i < userNum.size(); i++){
+            System.out.println(userNum.get(i));
+            numPrev = numPrev + userNum.get(i);
         }
-        System.out.println("The maximum number in the vector is: " + numMax);
+        System.out.println("The sum of all elements in the vector is: " + numPrev);
         scanner.close();
     }
 }

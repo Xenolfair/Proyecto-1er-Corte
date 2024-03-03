@@ -1,14 +1,13 @@
-package ejerciciosTaller;
+package WorkshopExcercises;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import java.util.Vector;
 
-public class Ej15 {
+public class Ej14 {
     public static void main(String[] args) {
-        /*15. Eliminar elementos impares:
-        Escribir un programa que elimine todos los elementos impares de una lista.*/
+        /*14. Eliminar duplicados:
+        Escribir un programa que elimine los elementos duplicados de una lista.*/
 
         Scanner scanner = new Scanner(System.in);
         List<Integer> userNum = new ArrayList<>();
@@ -30,12 +29,14 @@ public class Ej15 {
             }
         }
 
-        System.out.println("--> Removing odd elements from the vector...");
+        System.out.println("--> Removing duplicate elements from the vector...");
 
         for(int i = userNum.size() - 1; i >= 0; i--){
             int currentNum = userNum.get(i);
-            if (currentNum % 2 != 0) {
-                userNum.remove(i);
+            for (int j = i - 1; j >= 0; j--) {
+                if (currentNum == userNum.get(j)) {
+                    userNum.remove(j);
+                }
             }
         }
         for (int num : userNum) {

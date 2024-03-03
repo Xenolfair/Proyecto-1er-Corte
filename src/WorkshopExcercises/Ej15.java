@@ -1,16 +1,16 @@
-package ejerciciosTaller;
+package WorkshopExcercises;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
-import java.util.Vector;
-public class Ej11 {
+
+public class Ej15 {
     public static void main(String[] args) {
-        /*Suma de elementos:
-        Escribir un programa que calcule la suma de todos los elementos en un vector de enteros.*/
+        /*15. Eliminar elementos impares:
+        Escribir un programa que elimine todos los elementos impares de una lista.*/
 
         Scanner scanner = new Scanner(System.in);
-        Vector<Integer> userNum = new Vector<>();
-        int numPrev = 0;
-        int sumNum = 0;
+        List<Integer> userNum = new ArrayList<>();
 
         System.out.println("Enter numbers to add to the vector (enter 'end' to finish):");
         String input;
@@ -29,11 +29,17 @@ public class Ej11 {
             }
         }
 
-        for(int i = 0; i < userNum.size(); i++){
-            System.out.println(userNum.get(i));
-            numPrev = numPrev + userNum.get(i);
+        System.out.println("--> Removing odd elements from the vector...");
+
+        for(int i = userNum.size() - 1; i >= 0; i--){
+            int currentNum = userNum.get(i);
+            if (currentNum % 2 != 0) {
+                userNum.remove(i);
+            }
         }
-        System.out.println("The sum of all elements in the vector is: " + numPrev);
+        for (int num : userNum) {
+            System.out.println(num);
+        }
         scanner.close();
     }
 }

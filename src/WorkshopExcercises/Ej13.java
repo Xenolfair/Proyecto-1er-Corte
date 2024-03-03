@@ -1,17 +1,14 @@
-package ejerciciosTaller;
+package WorkshopExcercises;
 
 import java.util.Scanner;
 import java.util.Vector;
 
-public class Ej12 {
+public class Ej13 {
     public static void main(String[] args) {
-        /*Producto de elementos pares:
-    Escribir un programa que encuentre el producto de todos los números pares en un vector de
-    enteros.*/
-
+        /*Escribir un programa que encuentre el elemento máximo en un vector de enteros. es
+        decir el número más grande*/
         Scanner scanner = new Scanner(System.in);
         Vector<Integer> userNum = new Vector<>();
-        int numResult = 1;
 
         System.out.println("Enter numbers to add to the vector (enter 'end' to finish):");
         String input;
@@ -30,13 +27,13 @@ public class Ej12 {
             }
         }
 
-        for(int i = 0; i < userNum.size(); i++){
-            if (userNum.get(i) % 2 == 0){
-                numResult = numResult * userNum.get(i);
+        int numMax = userNum.get(0);
+        for(int i = 1; i < userNum.size(); i++){
+            if (userNum.get(i) > numMax){
+                numMax = userNum.get(i);
             }
         }
-        System.out.println("The sum of all elements in the vector is: " + numResult);
+        System.out.println("The maximum number in the vector is: " + numMax);
         scanner.close();
     }
 }
-
