@@ -34,5 +34,6 @@ public class Ej11 {
             numPrev = numPrev + userNum.get(i);
         }
         System.out.println("The sum of all elements in the vector is: " + numPrev);
+        scanner.close();
     }
 }

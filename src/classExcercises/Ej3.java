@@ -69,5 +69,6 @@ en una moneda (por ejemplo, dólares) y la tasa de cambio a la otra moneda (por 
                 System.out.print("Enter a valid number: 1, 2 o 3!");
                 break;
         };
+        scanner.close();
     };
 }

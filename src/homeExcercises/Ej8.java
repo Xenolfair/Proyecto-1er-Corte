@@ -29,5 +29,6 @@ public class Ej8 {
         } else {
             System.out.print("Your answer is incorrect, " + randomNum1 + " + " + randomNum2 + " = " + correctSum);
         }
+        scanner.close();
     }
 }

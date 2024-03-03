@@ -59,5 +59,6 @@ public class Ej7 {
                 }
             }
         }
+        scanner.close();
     }
 }

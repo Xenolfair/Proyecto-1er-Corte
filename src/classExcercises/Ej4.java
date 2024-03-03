@@ -28,5 +28,6 @@ Desarrolla un programa en Java que permita calcular el monto final de una invers
 
         System.out.println("Final amount: " + finalValue + "\n");
         System.out.println("Gain of: " + profit + "\n");
+        scanner.close();
     }
 }

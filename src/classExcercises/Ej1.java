@@ -20,5 +20,6 @@ Por ejemplo, 2000 y 2400 son años bisiestos, mientras que 1800, 1900
         } else {
             System.out.print(year + " is NOT a leap year!");
         };
+        scanner.close();
     };
 };

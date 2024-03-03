@@ -36,6 +36,7 @@ public class Ej12 {
             }
         }
         System.out.println("The sum of all elements in the vector is: " + numResult);
+        scanner.close();
     }
 }
 

@@ -23,5 +23,6 @@ SumDigitos = 1+2= 3
 
         }
         System.out.println("The sum of all digits is: " + sumNum);
+        scanner.close();
     }
 }

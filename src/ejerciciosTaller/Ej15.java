@@ -41,5 +41,6 @@ public class Ej15 {
         for (int num : userNum) {
             System.out.println(num);
         }
+        scanner.close();
     }
 }

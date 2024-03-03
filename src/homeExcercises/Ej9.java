@@ -17,6 +17,7 @@ public class Ej9 {
 
         int mcd = calcularMCD(num1, num2);
         System.out.println("The DCM of " + num1 + " y " + num2 + " es: " + mcd);
+        scanner.close();
     }
     public static int calcularMCD(int a, int b) {
         while (b != 0) {
@@ -26,4 +27,5 @@ public class Ej9 {
         }
         return a;
     }
+
 }

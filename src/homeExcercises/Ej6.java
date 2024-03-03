@@ -27,5 +27,6 @@ public class Ej6 {
             }
             System.out.print("\n");
         }
+        scanner.close();
     }
 }

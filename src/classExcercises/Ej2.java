@@ -63,5 +63,6 @@ public class Ej2 {
                 System.out.print("You lost!");
             }
         };
+        scanner.close();
     };
 };

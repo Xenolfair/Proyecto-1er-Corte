@@ -34,5 +34,6 @@ public class Ej13 {
             }
         }
         System.out.println("The maximum number in the vector is: " + numMax);
+        scanner.close();
     }
 }

@@ -8,6 +8,7 @@ public class Ej10 {
         Desarrolla un programa en Java que solicite al usuario ingresar un número entero positivo y
         un dígito, y luego cuente y muestre cuántas veces aparece ese dígito en el número
         ingresado.*/
+
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter your whole number: ");
         int userNum = scanner.nextInt();
@@ -26,5 +27,6 @@ public class Ej10 {
         }
 
         System.out.println("The digit appears " + countDigit + " times");
+        scanner.close();
     }
 }
