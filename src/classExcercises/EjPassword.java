@@ -2,7 +2,7 @@ package classExcercises;
 
 import java.util.Scanner;
 
-public class EjContraseña {
+public class EjPassword {
     public static void main(String[] args) {
         /*Ejercicio de Validación de Contraseña:
 Crea un programa en Java que pida al usuario ingresar una contraseña. El programa debe

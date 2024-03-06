@@ -9,7 +9,7 @@ public class Ej17Extra {
         /*Promedio de valores:
         Escribir un programa que tome un HashMap donde las claves son nombres de
         estudiantes y los valores son listas de calificaciones, y calcule el promedio de calificaciones
-        para cada estudiante.*/
+        para cada estudiante*/
 
         Scanner scanner = new Scanner(System.in);
 

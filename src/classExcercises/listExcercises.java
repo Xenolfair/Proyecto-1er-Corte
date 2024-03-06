@@ -1,6 +1,6 @@
 package classExcercises;
 
-public class ResolverEjercicios {
+public class listExcercises {
 
 /*Ejercicio de Verificación de Año Bisiesto:
 Crea un programa en Java que solicite al usuario ingresar un
